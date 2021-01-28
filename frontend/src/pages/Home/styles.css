@@ -1,0 +1,88 @@
+/*#1C83F6#0F23DA*/
+/*Não posso colocar medida de porcentagem em um filho direto do body*/
+.section-1 {
+    width: 100%;
+    height: 88vh;
+    /* linear-gradient(direção do degrade, cor 1m cor2) */
+    background-image: linear-gradient(to right, #1c83f6, #0f23da);
+    opacity: 90%;
+}
+
+.section-1 .container {
+    max-width: 1264px;
+    margin: 0 auto; /*centralizar*/
+}
+
+.section-1 .container .header {
+    height: 16vh;
+    display: flex;
+    justify-content: space-between; /*ele separa os elementos filhos diretos com a maior distancia possível*/
+    align-items: center; /*centralizar verticalmente*/
+    padding: 0 32px;
+}
+
+.section-1 .container .header h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.section-1 .container .header nav button {
+    width: 192px;
+    height: 48px;
+    border-radius: 32px;
+    border: 0;
+    font-weight: bold;
+    outline: 0; /*remove a linha de fora do elemento, que aparece quando clicamos*/
+    cursor: pointer; /*mãozinha*/
+    color: #fff;
+}
+
+/* pseudo elemento css */
+/*passo o caminho e digo para selecionar o primeiro elemento, a contagem iniciasse em 1*/
+.section-1 .container .header nav button:nth-child(1){
+    background-color: transparent;
+    border: 2px solid #fff !important; /*preferencia*/
+    margin-right: 8px;
+}
+
+.section-1 .container .header nav button:nth-child(2){
+    background-color: rgba(89, 254, 146, 0.9);
+}
+
+.section-1 .container main {
+    display: flex;
+    height: 72vh;
+}
+
+.section-1 .container main section  {
+    width: 50%;
+}
+
+.section-1 .container main section:nth-child(1){
+    display: flex;
+    flex-direction: column;/*mudo a direção da organização , lembre que quando utilizo isso, justify e align trocam os eixos*/
+    align-items: flex-start;
+    padding: 21vh 0 0 32px;
+}
+
+.section-1 .container main section:nth-child(1) h1 {
+    font-size: 56px;
+    line-height: 56px;
+    color: #fff;
+}
+
+.section-1 .container main section:nth-child(1) img {
+    margin-top: 24px;
+}
+
+.section-1 .container main section:nth-child(1) p {
+    margin-top: 24px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.section-1 .container main section:nth-child(2){
+    display: flex;
+    align-items: flex-end; 
+    justify-content: flex-end; /*alinhamos ele verticalmente e horizontalmente no final do flex-box*/
+}

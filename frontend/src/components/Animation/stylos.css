@@ -1,0 +1,47 @@
+.bg-animation {
+    background-image: linear-gradient(to right, #1c83f6, #0f23da);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* Camadas */
+    z-index: 99;
+
+    animation: animationBg 1s 1s forwards; /*o primeiro tempo sempre será a duração da animação, o segundo o delay*/
+    /* animation-delay: 2s; */
+}
+
+.animation h2 {
+    color: #fff;
+    font-size: 64px;
+
+    animation: animationText 2s forwards;
+}
+
+@keyframes animationText {
+    0% {
+        letter-spacing: 0;
+        margin-bottom: 0;
+    }
+    50% {
+        letter-spacing: 20px;
+        margin-bottom: 20px;
+        opacity: 100%;
+    }
+    100% {
+        letter-spacing: 0;
+        margin-bottom: 0;
+        opacity: 0%;
+    }
+}
+
+@keyframes animationBg {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
