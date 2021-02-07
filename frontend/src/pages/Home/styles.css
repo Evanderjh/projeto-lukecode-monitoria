@@ -8,12 +8,12 @@
     opacity: 90%;
 }
 
-.section-1 .container {
+.section-1 .box {
     max-width: 1264px;
     margin: 0 auto; /*centralizar*/
 }
 
-.section-1 .container .header {
+.section-1 .box .header {
     height: 16vh;
     display: flex;
     justify-content: space-between; /*ele separa os elementos filhos diretos com a maior distancia possível*/
@@ -21,12 +21,12 @@
     padding: 0 32px;
 }
 
-.section-1 .container .header h2 {
+.section-1 .box .header h2 {
     color: #fff;
     font-size: 40px;
 }
 
-.section-1 .container .header nav button {
+.section-1 .box .header nav button {
     width: 192px;
     height: 48px;
     border-radius: 32px;
@@ -37,55 +37,55 @@
     color: #fff;
 }
 
-.section-1 .container .header nav button.btn-menu {
+.section-1 .box .header nav button.btn-menu {
     display: none;
 }
 
 /* pseudo elemento css */
 /*passo o caminho e digo para selecionar o primeiro elemento, a contagem iniciasse em 1*/
-.section-1 .container .header nav button:nth-child(1){
+.section-1 .box .header nav button:nth-child(1){
     background-color: transparent;
     border: 2px solid #fff !important; /*preferencia*/
     margin-right: 8px;
 }
 
-.section-1 .container .header nav button:nth-child(2){
+.section-1 .box .header nav button:nth-child(2){
     background-color: rgba(89, 254, 146, 0.9);
 }
 
-.section-1 .container main {
+.section-1 .box main {
     display: flex;
     height: 72vh;
 }
 
-.section-1 .container main section  {
+.section-1 .box main section  {
     width: 50%;
 }
 
-.section-1 .container main section:nth-child(1){
+.section-1 .box main section:nth-child(1){
     display: flex;
     flex-direction: column;/*mudo a direção da organização , lembre que quando utilizo isso, justify e align trocam os eixos*/
     align-items: flex-start;
     padding: 21vh 0 0 32px;
 }
 
-.section-1 .container main section:nth-child(1) h1 {
+.section-1 .box main section:nth-child(1) h1 {
     font-size: 56px;
     line-height: 56px;
     color: #fff;
 }
 
-.section-1 .container main section:nth-child(1) img {
+.section-1 .box main section:nth-child(1) img {
     margin-top: 24px;
 }
 
-.section-1 .container main section:nth-child(1) p {
+.section-1 .box main section:nth-child(1) p {
     margin-top: 24px;
     color: #fff;
     font-size: 18px;
 }
 
-.section-1 .container main section:nth-child(2){
+.section-1 .box main section:nth-child(2){
     display: flex;
     align-items: flex-end; 
     justify-content: flex-end; /*alinhamos ele verticalmente e horizontalmente no final do flex-box*/
@@ -97,7 +97,7 @@
     background-color: #fcfcfc;
 }
 
-.section-2 .container {
+.section-2 .box {
     max-width: 1264px;
     height: 80vh;
     margin: 0 auto; /*centralizar*/
@@ -108,24 +108,24 @@
     align-items: center;
 }
 
-.section-2 .container h2 {
+.section-2 .box h2 {
     font-size: 40px;
     text-align: center;
     color: #3a3a3a;
     margin-top: 64px;
 }
 
-.section-2 .container p {
+.section-2 .box p {
     font-size: 18px;
 }
 
-.section-2 .container .card-container {
+.section-2 .box .card-container {
     display: flex;
     width: 75%;
     justify-content: space-between;
 }
 
-.section-2 .container button {
+.section-2 .box button {
     width: 320px;
     height: 48px;
     border-radius: 32px;
@@ -145,14 +145,14 @@
     opacity: 90%
 }
 
-.section-3 .container {
+.section-3 .box {
     max-width: 1264px;
     height: 80vh;
     margin: 0 auto;
     padding: 0 32px;
 }
 
-.section-3 .container h2 {
+.section-3 .box h2 {
     font-size: 40px;
     color: #fcfcfc;
     height: 28vh;
@@ -161,40 +161,98 @@
     justify-content: center;
 }
 
-.section-3 .container .categories-container {
+.section-3 .box .categories-container {
     height: 52vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+.section-4 {
+    width: 100%;
+    height: 80vh;
+    background-color: #fcfcfc;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.section-4 .box {
+    max-width: 1264px;
+    height: 68vh;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-4 .box h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #3a3a3a;
+}
+
+.image-review {
+    display: flex;
+    justify-content: center;
+}
+
+.image-review img {
+    width: 300px;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.user-review {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #ececec;
+}
+
+footer .box {
+    max-width: 1264px;
+    margin: 0 auto;
+    padding: 8px 32px;
+}
+
+
 /*Tela  <= 1130ox largura*/
 @media (max-width: 1120px) {
-    .section-1 .container main section:nth-child(1) h1 {
+    .section-1 .box main section:nth-child(1) h1 {
         font-size: 48px;
         line-height: 48px;
     }
 
-    .section-1 .container main section:nth-child(2) img {
+    .section-1 .box main section:nth-child(2) img {
         width: 500px;
     }
 
-    .section-2 .container .card-container {
+    .section-2 .box .card-container {
         width: 85%;
     }
 }
 
 @media (max-width: 980px) {
-    .section-1 .container .header {
+    .section-1 .box .header {
         padding: 0 12px;
     }
 
-    .section-1 .container .header nav button {
+    .section-1 .box .header nav button {
         display: none;
     }
 
     /* Menu hamburguer */
-    .section-1 .container .header nav button.btn-menu {
+    .section-1 .box .header nav button.btn-menu {
         display: inline-block;
         background-color: rgba(89, 254, 146, 0.9);
         width: 48px;
@@ -206,27 +264,27 @@
         font-size: 22px;
     }
 
-    .section-1 .container main section:nth-child(1) {
+    .section-1 .box main section:nth-child(1) {
         width: 100%;
         align-items: center;
         padding: 16vh 16px;
     }
 
-    .section-1 .container main section:nth-child(1) h1 {
+    .section-1 .box main section:nth-child(1) h1 {
         text-align: center;
         font-size: 38px;
         line-height: 38px;
     }
 
-    .section-1 .container main section:nth-child(1) p {
+    .section-1 .box main section:nth-child(1) p {
         text-align: center;
     }
 
-    .section-1 .container main section:nth-child(2) {
+    .section-1 .box main section:nth-child(2) {
         width: 0%;
     }
 
-    .section-1 .container main section:nth-child(2) img {
+    .section-1 .box main section:nth-child(2) img {
         display: none;
     }
 
@@ -234,53 +292,53 @@
         height: 180vh;
     }
 
-    .section-2 .container{
+    .section-2 .box{
         height: 180vh;
     }
 
-    .section-2 .container h2{
+    .section-2 .box h2{
         font-size: 38px;
     }
 
-    .section-2 .container .card-container {
+    .section-2 .box .card-container {
         flex-direction: column;
     }
 
-    .section-2 .container .card-container article {
+    .section-2 .box .card-container article {
         text-align: center;
         margin-top: 32px;
     }
 }
 
 @media (max-width: 387px) {
-    .section-1 .container main section:nth-child(1) h1 {
+    .section-1 .box main section:nth-child(1) h1 {
         font-size: 30px;
         line-height: 30px;
     }
 
-    .section-1 .container main section:nth-child(1) img {
+    .section-1 .box main section:nth-child(1) img {
         width: 280px;
     }
 
-    .section-1 .container main section:nth-child(1) p {
+    .section-1 .box main section:nth-child(1) p {
         font-size: 16px;
         line-height: 16px;
     }
 
-    .section-2 .container h2{
+    .section-2 .box h2{
         font-size: 32px;
         margin-bottom: 22px;
     }
 
-    .section-2 .container .card-container {
+    .section-2 .box .card-container {
         width: 100%;
     }
 
-    .section-2 .container .card-container article {
+    .section-2 .box .card-container article {
         padding: 0;
     }
 
-    .section-2 .container .card-container article  img{
+    .section-2 .box .card-container article  img{
         width: 100%;
     }
 

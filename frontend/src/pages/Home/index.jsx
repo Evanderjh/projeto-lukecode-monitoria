@@ -17,6 +17,9 @@ import securityIcon from '../../assets/images/courses/security-icon.svg';
 import flutterIcon from '../../assets/images/courses/flutter-icon.svg';
 import reactIcon from '../../assets/images/courses/react-icon.svg';
 import cloudrIcon from '../../assets/images/courses/cloud-icon.svg';
+import markLeft from '../../assets/images/mark-left.svg';
+import markRight from '../../assets/images/mark-right.svg';
+import userReviewImage from '../../assets/images/users/user.png';
 
 const Home = () => {
 
@@ -24,7 +27,7 @@ const Home = () => {
         <>
             {/* <Animation /> */}
             <div className="section-1">
-                <div className="container">
+                <div className="box">
                     <header className="header">
                         <h2>Luke Code</h2>
                         <nav>
@@ -55,7 +58,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="section-2">
-                <div className="container">
+                <div className="box">
                     <h2>+3 Cursos Completos</h2>
                     <p>Na Luke code, você tem acesso a 3 cursos gratuitos, basta se cadastrar na plataforma.</p>
                     <section className="card-container">
@@ -77,62 +80,87 @@ const Home = () => {
                         >
                             Desenvolvimento IOS e Android <br /> com Flutter
                         </CardCourse>
-                        <button>
-                            INSCREVA-SE
-                        </button>
                     </section>
-
+                    <button>
+                        INSCREVA-SE
+                    </button>
                 </div>
             </div>
-            {/* <div className="section-3">
-                <div className="container">
+            <div className="section-3">
+                <div className="box">
                     <h2>O que oferecemos para você</h2>
                     <section className="categories-container">
-                        <CardCategory 
+                        <CardCategory
                             image={phpIcon}
                             alt="Ícone do PHP"
                             title="BACK-END"
                             numberCourses="22 Cursos"
                             color="#E31B1B"
                         />
-                        <CardCategory 
+                        <CardCategory
                             image={databaseIcon}
                             alt="Íconde do Banco de dados"
                             title="BANCO DE DADOS"
                             numberCourses="2 Cursos"
                             color="#f0df48"
                         />
-                        <CardCategory 
+                        <CardCategory
                             image={securityIcon}
                             alt="Ícone de segurança"
                             title="SEGURANÇA"
                             numberCourses="22 Cursos"
                             color="#b58fdb"
-                        />        
-                        <CardCategory 
+                        />
+                        <CardCategory
                             image={flutterIcon}
                             alt="Ícone do Flutter"
                             title="MOBILE"
                             numberCourses="7 Cursos"
                             color="#2159AB"
-                        />        
-                        <CardCategory 
+                        />
+                        <CardCategory
                             image={reactIcon}
                             alt="Ícone do React"
                             title="FRONT-END"
                             numberCourses="18 Cursos"
                             color="#59FE9B"
-                        />        
-                        <CardCategory 
+                        />
+                        <CardCategory
                             image={cloudrIcon}
                             alt="Ícone do Cloud Computing"
                             title="CLOUD COMPUTING"
                             numberCourses="22 Cursos"
                             color="#E34B1B"
-                        />        
+                        />
                     </section>
-                </div> 
-            </div>*/}
+                </div>
+            </div>
+            <div className="section-4">
+                <div className="box">
+                    <h2>Depoimentos</h2>
+                    <div className="image-review">
+                        <img src={userReviewImage} alt="Joaquim"/>
+                    </div>
+                    <div className="review">
+                        <img src={markLeft} alt=""/>
+                        <p>
+                            Professor extremamente didático e com amplos conhecimentose <br />
+                            o curso tem conteúdo que permite exercitar o que é ensinado!
+                        </p>
+                        <img src={markRight} alt=""/>
+                    </div>
+                    <div className="user-review">
+                        <h4>
+                            Joaquim
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div className="box">
+                    &copy; {new Date().getFullYear()} - Luke Code - Alguns direitos reservados
+                </div>
+            </footer>
         </>
     );
 }

@@ -6,8 +6,8 @@
     box-sizing: border-box; /*ele indica que o padding do meu elemento está restrito ao tamanho interno dele.*/
 }
 
-html {
-    font-family: 'Maven Pro', sans-serif;
+html, body {
+    font-family: 'Maven Pro', sans-serif !important;
 }
 
 a {
